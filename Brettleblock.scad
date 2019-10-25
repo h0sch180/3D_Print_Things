@@ -1,0 +1,11 @@
+cube([100,105,5]);
+translate([0,0,5]) cube([100,5,10]);
+translate([0,15,5]) cube([100,5,10]);
+translate([0,30,5]) cube([100,5,10]);
+translate([0,40,5]) cube([100,5,10]);
+translate([0,50,5]) cube([100,5,10]);
+translate([0,60,5]) cube([100,5,10]);
+translate([0,70,5]) cube([100,5,10]);
+translate([0,80,5]) cube([100,5,10]);
+translate([0,90,5]) cube([100,5,10]);
+translate([0,100,5]) cube([100,5,10]);
