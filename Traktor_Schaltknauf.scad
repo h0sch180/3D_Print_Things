@@ -1,7 +1,7 @@
 difference(){
     union(){
-        cylinder(37,24/2,24/2, $fn=100);
-        translate([0,0,15]) cylinder(19,24/2,50/2, $fn=100);
+        cylinder(37,30/2,30/2, $fn=100);
+        translate([0,0,15]) cylinder(19,30/2,50/2, $fn=100);
         translate([0,0,32]) cylinder(5,7/2,7/2, $fn=100);
         translate([0,0,34]) cylinder(3,50/2,50/2, $fn=100);
         difference(){
