@@ -1,0 +1,11 @@
+$fn=50;
+difference(){
+    union(){
+        cube([18.5,10,8.5]);
+        translate([0,5,0])cylinder(8.5,10/2,10/2);
+        translate([18.5,5,0])cylinder(8.5,10/2,10/2);
+    }
+    translate([0,5,0])cylinder(8.5,4/2,4/2);
+    translate([18.5,5,0])cylinder(8.5,4/2,4/2);
+    translate([9.25,5,0])cylinder(8.5,5/2,5/2);
+}
