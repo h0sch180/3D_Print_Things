@@ -5,7 +5,7 @@ M107 ;start with the fan off
 M92 X80.00 Y80.00 Z400.00 E393.86 ; calibrate Extruder
 G28 X0 Y0 ;move X/Y to min endstops
 G28 Z0 ;move Z to min endstops
-G29; BL-Touch calibrate M851 Z-4.00
+G29; BL-Touch calibrate M851 Z-3.90
 M500; Save BL-Touch Values
 M501; Use BL-Touch Values
 M420 S1; Enable BLTouch
