@@ -17,15 +17,15 @@ difference() {
             
         }
         //Schraubenhalterung
-        cube([4,6,5]);
-        translate([0,24,0]) cube([4,6,5]);
-        translate([96,0,0]) cube([4,6,5]);
-        translate([96,24,0]) cube([4,6,5]);
+        cube([5,6,5]);
+        translate([0,24,0]) cube([5,6,5]);
+        translate([96,0,0]) cube([5,6,5]);
+        translate([96,24,0]) cube([5,6,5]);
     }
     //Schraubenlöcher
-    translate([2,3,5]) cylinder(4,2/2,2/2);
-    translate([2,27,5]) cylinder(4,2/2,2/2);
+    translate([2,3,2]) cylinder(5,1.5/2,1.5/2);
+    translate([2,27,2]) cylinder(5,1.5/2,1.5/2);
     
-    translate([98,3,5]) cylinder(4,2/2,2/2);
-    translate([98,27,5]) cylinder(4,2/2,2/2);
+    translate([98,3,2]) cylinder(5,1.5/2,1.5/2);
+    translate([98,27,2]) cylinder(5,1.5/2,1.5/2);
 }

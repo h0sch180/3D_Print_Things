@@ -4,9 +4,9 @@ difference() {
         cube([100,30,21]);
         sphere(2);
     }
-    translate([6,2,0])cube([88,26,26]);
+    translate([6,2,0])cube([89,26,26]);
     translate([-2,7,13])cube([10,15,8]);
-    translate([8,-2,15.5])cube([8,5,5.5]);
+    translate([8,28,15.5])cube([8,5,5.5]);
     
     //Schraubenlöcher
     translate([2,3,-2])cylinder(22,5.5/2,5.5/2);
