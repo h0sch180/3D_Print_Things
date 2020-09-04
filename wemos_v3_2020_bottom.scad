@@ -26,15 +26,15 @@ difference() {
     }
     //Schraubenlöcher
     translate([2,3,0]) cylinder(6,3.5/2,3.5/2);
-    translate([2,27.5,0]) cylinder(6,3.5/2,3.5/2);
+    translate([2,28,0]) cylinder(6,3.5/2,3.5/2);
     
     translate([97,3,0]) cylinder(6,3.5/2,3.5/2);
-    translate([97,27.5,0]) cylinder(6,3.5/2,3.5/2);
+    translate([97,28,0]) cylinder(6,3.5/2,3.5/2);
     //Mutterneinsatz
     translate([2,3,-2]) cylinder(3,7/2,7/2,$fn=6);
-    translate([2,27.5,-2]) cylinder(3,7/2,7/2,$fn=6);
+    translate([2,28,-2]) cylinder(3,7/2,7/2,$fn=6);
     
     translate([97,3,-2]) cylinder(3,7/2,7/2,$fn=6);
-    translate([97,27.5,-2]) cylinder(3,7/2,7/2,$fn=6);
+    translate([97,28,-2]) cylinder(3,7/2,7/2,$fn=6);
 }
 translate([92.5,0,0]) cube([2,30,2]);
