@@ -1,5 +1,5 @@
 /*
-Case for: Wemos Powerbank V3, V8 and V9 Design: 2020
+Bottomcase for: Wemos Powerbank V3, V8 and V9 Design: 2020
 
 ==================================================================================
 ==================================================================================
@@ -53,7 +53,7 @@ if (type=="v8"){
 }
 
 if (type=="v9"){
-  //V8
+  //V9
   bottomcase(length=100,width=97,holelength=3,holewidth=8);
 }
 
