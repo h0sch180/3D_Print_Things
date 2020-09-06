@@ -9,15 +9,15 @@ difference() {
     translate([8,28,15.5])cube([8,5,5.5]);
     
     //Schraubenlöcher
-    translate([2,3,-2])cylinder(3,6.5/2,6.5/2);
+    translate([2,2.5,-2])cylinder(3,6.5/2,6.5/2);
     translate([2,28,-2])cylinder(3,6.5/2,6.5/2);
-    translate([98,3,-2])cylinder(3,6.5/2,6.5/2);
-    translate([98,28,-2])cylinder(3,6.5/2,6.5/2);
+    translate([97,3,-2])cylinder(3,6.5/2,6.5/2);
+    translate([97,28,-2])cylinder(3,6.5/2,6.5/2);
 
-    translate([2,3,-2])cylinder(26,3.5/2,3.5/2);
-    translate([2,28,-2])cylinder(26,3.5/2,3.5/2);
-    translate([98,3,-2])cylinder(26,3.5/2,3.5/2);
-    translate([98,28,-2])cylinder(26,3.5/2,3.5/2);
+    translate([2,2.5,-2])cylinder(26,4/2,4/2);
+    translate([2,28,-2])cylinder(26,4/2,4/2);
+    translate([97,2.5,-2])cylinder(26,4/2,4/2);
+    translate([97,28,-2])cylinder(26,4/2,4/2);
 
     //Oben saubere Kante
     //translate([-2,-2,21])cube([110,40,2]);
