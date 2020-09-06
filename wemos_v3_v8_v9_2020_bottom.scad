@@ -41,22 +41,18 @@ type="v8";
 ================================================================================
 */
 
-
 if (type=="v3"){
   //V3
   bottomcase(length=100,width=30,holelength=2,holewidth=2.5);
 }
-
 if (type=="v8"){
   //V8
   bottomcase(length=100,width=49,holelength=3,holewidth=8);
 }
-
 if (type=="v9"){
   //V9
   bottomcase(length=100,width=97,holelength=3,holewidth=8);
 }
-
 
 module bottomcase(length,width,holelength,holewidth){
     $fn=50;
@@ -69,30 +65,23 @@ module bottomcase(length,width,holelength,holewidth){
                 if(width == 30) {
                   //LEDs
                   translate([18,5,-2])cube([20,2,3]);
+                  //USB-Ports  
+                  translate([length-28.5,-2,2])cube([10,5,4]);
+                  translate([length-14,width-2,2])cube([8,4,4]);
                 }
                 //V8
                 if (width == 49) {
                   //LEDs
                   translate([18,7,-2])cube([20,2,3]);
+                  //USB-Ports
+                  translate([71,-2,2])cube([10,5,4]);
+                  translate([84.5,width-2,2])cube([8,4,4]);
                 }
                 //V9
                 if (width == 97) {
                   //LEDs
                   translate([22,30,-2])cube([20,2,3]);
-                }
-                //USB-Ports
-                if(width == 30) {
-                  // V3
-                  translate([length-28.5,-2,2])cube([10,5,4]);
-                  translate([length-14,width-2,2])cube([8,4,4]);
-                }
-                if(width == 49) {
-                  // V8
-                  translate([71,-2,2])cube([10,5,4]);
-                  translate([84.5,width-2,2])cube([8,4,4]);
-                }
-                if (width == 97) {
-                 // V9
+                  //USB-Ports
                   translate([length-2,22,2])cube([5,10,4]);
                   translate([length-2,65.5,2])cube([4,8,4]);  
                 }
@@ -115,13 +104,11 @@ module bottomcase(length,width,holelength,holewidth){
         //Schraubenlöcher
         translate([holelength,holewidth,0]) cylinder(6,4/2,4/2);
         translate([holelength,width-holewidth,0]) cylinder(6,4/2,4/2);
-        
         translate([length-holelength,holewidth,0]) cylinder(6,4/2,4/2);
         translate([length-holelength,width-holewidth,0]) cylinder(6,4/2,4/2);
         //Mutterneinsatz
         translate([holelength,holewidth,-2]) cylinder(3,7/2,7/2,$fn=6);
         translate([holelength,width-holewidth,-2]) cylinder(3,7/2,7/2,$fn=6);
-        
         translate([length-holelength,holewidth,-2]) cylinder(3,7/2,7/2,$fn=6);
         translate([length-holelength,width-holewidth,-2]) cylinder(3,7/2,7/2,$fn=6);
     }
