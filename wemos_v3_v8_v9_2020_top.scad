@@ -34,7 +34,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ================================================================================
 */
 // Which one , would you build: v3, v8 or v9
-type="v3";
+type="v8";
 
 /*
 ================================================================================
@@ -72,7 +72,7 @@ module topcase(length,width,holelength,holewidth){
         //V8
         if(width == 49) {
           // USB-Port
-          translate([-2,18,13])cube([10,15,8]);
+          translate([-2,16,13])cube([10,15,8]);
         }
         //V9
         if(width == 97) {
