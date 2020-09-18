@@ -34,7 +34,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ================================================================================
 */
 // Which one , would you build: v3, v8 or v9
-type="v8";
+type="v3";
 
 /*
 ================================================================================
@@ -43,15 +43,15 @@ type="v8";
 
 if (type=="v3"){
   //V3
-  bottomcase(length=100,width=30,holelength=2,holewidth=2.5);
+  bottomcase(length=100,width=30,holelength=3,holewidth=2.5);
 }
 if (type=="v8"){
   //V8
-  bottomcase(length=100,width=49,holelength=3,holewidth=8);
+  bottomcase(length=100,width=49,holelength=3,holewidth=8.5);
 }
 if (type=="v9"){
   //V9
-  bottomcase(length=100,width=97,holelength=3,holewidth=8);
+  bottomcase(length=100,width=97,holelength=3,holewidth=8.5);
 }
 
 module bottomcase(length,width,holelength,holewidth){
@@ -89,10 +89,10 @@ module bottomcase(length,width,holelength,holewidth){
             //Schraubenhalterung
             if(width != 30) {
               // V8 + V9
-              translate([0,5,0]) cube([6.5,6.5,5]);
-              translate([0,width-6.5-5,0]) cube([6.5,6.5,5]);
-              translate([length-6.5,5,0]) cube([6.5,6.5,5]);
-              translate([length-6.5,width-6.5-5,0]) cube([6.5,6.5,5]);
+              translate([0,5,0]) cube([6.5,7,5]);
+              translate([0,width-6-5,0]) cube([6.5,7,5]);
+              translate([length-6,5,0]) cube([6.5,7,5]);
+              translate([length-6,width-6-5,0]) cube([6.5,7,5]);
             } else {
               // V3
               cube([6.5,6.5,5]);
@@ -101,15 +101,30 @@ module bottomcase(length,width,holelength,holewidth){
               translate([length-5.5,width-6.5,0]) cube([6.5,6.5,5]);
             }
         }
-        //Schraubenlöcher
-        translate([holelength,holewidth,0]) cylinder(6,4/2,4/2);
-        translate([holelength,width-holewidth,0]) cylinder(6,4/2,4/2);
-        translate([length-holelength,holewidth,0]) cylinder(6,4/2,4/2);
-        translate([length-holelength,width-holewidth,0]) cylinder(6,4/2,4/2);
-        //Mutterneinsatz
-        translate([holelength,holewidth,-2]) cylinder(3,7/2,7/2,$fn=6);
-        translate([holelength,width-holewidth,-2]) cylinder(3,7/2,7/2,$fn=6);
-        translate([length-holelength,holewidth,-2]) cylinder(3,7/2,7/2,$fn=6);
-        translate([length-holelength,width-holewidth,-2]) cylinder(3,7/2,7/2,$fn=6);
+        if(width != 30) {
+          // V8 + V9
+          //Schraubenlöcher
+          translate([holelength,holewidth,0]) cylinder(6,3.5/2,3.5/2);
+          translate([holelength,width-holewidth+1,0]) cylinder(6,3.5/2,3.5/2);
+          translate([length-holelength+0.5,holewidth,0]) cylinder(6,3.5/2,3.5/2);
+          translate([length-holelength+0.5,width-holewidth+1,0]) cylinder(6,3.5/2,3.5/2);
+          //Mutterneinsatz
+          translate([holelength,holewidth,-2]) rotate(90)cylinder(3,7/2,7/2,$fn=6);
+          translate([holelength,width-holewidth+1,-2]) rotate(90)cylinder(3,7/2,7/2,$fn=6);
+          translate([length-holelength+0.5,holewidth,-2]) rotate(90)cylinder(3,7/2,7/2,$fn=6);
+          translate([length-holelength+0.5,width-holewidth+1,-2]) rotate(90)cylinder(3,7/2,7/2,$fn=6);
+        } else {
+          // V3
+          //Schraubenlöcher
+          translate([holelength,holewidth,0]) cylinder(6,3.5/2,3.5/2);
+          translate([holelength,width-holewidth,0]) cylinder(6,3.5/2,3.5/2);
+          translate([length-holelength,holewidth,0]) cylinder(6,3.5/2,3.5/2);
+          translate([length-holelength,width-holewidth,0]) cylinder(6,3.5/2,3.5/2);
+          //Mutterneinsatz
+          translate([holelength,holewidth,-2]) rotate(90)cylinder(3,7/2,7/2,$fn=6);
+          translate([holelength,width-holewidth,-2]) rotate(90)cylinder(3,7/2,7/2,$fn=6);
+          translate([length-holelength,holewidth,-2]) rotate(90)cylinder(3,7/2,7/2,$fn=6);
+          translate([length-holelength,width-holewidth,-2]) rotate(90)cylinder(3,7/2,7/2,$fn=6);
+        }
     }
 }
