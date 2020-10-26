@@ -21,9 +21,12 @@ difference() {
     // Down/Up Stepper 22x17x4mm (+2mm insulation)
     translate([(luefterlaenge+20-24)/2,(-luefterdicke*1.2),(luefterdicke*0.3)-2])cube([24,19,4]);
     //cable guide
-    translate([(luefterlaenge+20)/2,(-luefterdicke*1.2)+8.5,(luefterdicke*0.3)-2])cube([40,3,4]);
-    translate([(luefterlaenge+20-82)/2,(-luefterdicke*1.2)+8.5,(luefterdicke*0.3)-2])cube([40,3,4]);
-    translate([(luefterlaenge+20-82)/2,(-luefterdicke*1.2)+8.5-40,(luefterdicke*0.3)-2])cube([3,40,4]);
+    translate([(luefterlaenge+20)/2,(-luefterdicke*1.2)+8.5,(luefterdicke*0.3)-2])cube([40,4,4]);
     
-    translate([(luefterlaenge+20+76.5)/2,(-luefterdicke*1.2)+8.5,(luefterdicke*0.3)-2])cube([3,25,15]);
+	translate([(luefterlaenge+20-82)/2,(-luefterdicke*1.2)+8.5,(luefterdicke*0.3)-2])cube([40,4,4]);
+	translate([(luefterlaenge+20-84)/2,(-luefterdicke*1.2)+8.5-36,(luefterdicke*0.3)-2])cube([4,40,4]);
+    translate([(luefterlaenge+20-84)/2,(-luefterdicke*1.2)+8.5-4,(luefterdicke*0.3)-2])cube([6,6,4]);
+	
+    translate([(luefterlaenge+20+74.5)/2,(-luefterdicke*1.2)+8.5,(luefterdicke*0.3)-2])cube([4,25,15]);
+	translate([(luefterlaenge+20+70)/2,(-luefterdicke*1.2)+8.5,(luefterdicke*0.3)-2])cube([6,6,15]);
 }
