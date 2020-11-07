@@ -19,7 +19,7 @@ difference() {
     translate([15,-rundung,luefterdicke*0.6]) cube([luefterlaenge-10,luefterdicke,40]);
     translate([15,luefterdicke,luefterdicke*0.9]) cube([luefterlaenge-10,luefterdicke,40]);
     // Down/Up Stepper 22x17x4mm (+2mm insulation)
-    translate([(luefterlaenge+20-24)/2,(-luefterdicke*1.2),(luefterdicke*0.3)-2])cube([24,19,4]);
+    translate([(luefterlaenge+20-38)/2,(-luefterdicke*1.2),(luefterdicke*0.3)-2])cube([39,19,4]);
     //cable guide
     translate([(luefterlaenge+20)/2,(-luefterdicke*1.2)+8.5,(luefterdicke*0.3)-2])cube([40,4,4]);
     
