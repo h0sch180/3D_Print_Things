@@ -20,7 +20,7 @@ module coin(label="", dia=23, height=2.4, siz=10, fnt = "Liberation Sans") {
                 }
 
         }
-        translate([0,0,0.4]) rotate([180,0,180]) linear_extrude(0.4) {
+        translate([0,0,0.8]) rotate([180,0,180]) linear_extrude(0.8) {
             text(backtext, size=backtextsize,
                 halign = "center", valign="center",
                 font = "Liberation Sans:style=Bold Italic");
